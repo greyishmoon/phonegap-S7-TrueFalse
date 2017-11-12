@@ -19,8 +19,17 @@ function onDeviceReady() {
 
 
 function getAnswer() {
+    
+//    result = random();
+//    $("#randomResult").text("Result was: " + result);
+    
+    if (random()) {
+        $("#responseText").text("TRUE");
+    } else {
+        $("#responseText").text("FALSE");
+    }
 	
-	$("#responseText").text(random());
+	
 	
 }
 
