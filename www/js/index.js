@@ -19,17 +19,8 @@ function onDeviceReady() {
 
 
 function getAnswer() {
-    
-    result = random();
-    $("#responseText").text("Result was: " + result);
-    
-    if (random()) {
-        $("#responseText").text("TRUE");
-    } else {
-        $("#responseText").text("FALSE");
-    }
 	
-	
+	$("#responseText").text(random());
 	
 }
 
@@ -37,3 +28,14 @@ function random() {
     return !Math.round(Math.random());
     }
 }
+
+
+//    result = random();
+//    $("#responseText").text("Result was: " + result);
+//    
+//    if (random()) {
+//        $("#responseText").text("TRUE");
+//    } else {
+//        $("#responseText").text("FALSE");
+//    }
+//	
