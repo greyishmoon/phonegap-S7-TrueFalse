@@ -20,8 +20,8 @@ function onDeviceReady() {
 
 function getAnswer() {
     
-//    result = random();
-//    $("#randomResult").text("Result was: " + result);
+    result = random();
+    $("#responseText").text("Result was: " + result);
     
     if (random()) {
         $("#responseText").text("TRUE");
