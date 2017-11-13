@@ -32,8 +32,8 @@ function getAnswer() {
         // Beep once!
         navigator.notification.beep(1);
         
-        //vibrate for 2000 milliseconds
-        navigator.vibrate(2000);
+        //vibrate for 1000 milliseconds
+        navigator.vibrate(1000);
     } else {
         $("#responseText").text("Result is FALSE");
         
