@@ -10,13 +10,11 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova device event triggered function
 function onDeviceReady() {
 	
-    
-    // Add other event listeners here if needed (pause, resume, backbutton etc)
 	//set up click event handling for button
     $('#submitButton').on("click", getAnswer);
     
-    // updates display    
-	// updateDisplay();
+    //start watching for shake gestures
+    shake.startWatch(getAnswer);
 	    
 	console.log("device ready");
     
