@@ -34,10 +34,16 @@ function getAnswer() {
         $("#responseText").text("Result is TRUE");
         // Beep once!
         navigator.notification.beep(1);
+        //vibrate for 2000 milliseconds
+navigator.vibrate(2000);
     } else {
         $("#responseText").text("Result is FALSE");
         // Beep twice!
         navigator.notification.beep(2);
+        //vibrate for 200 milliseconds
+        //wait for 300 milliseconds
+        //wait for 500 milliseconds
+        navigator.vibrate([200, 300, 200, 300, 500]);
     }
 
 	
