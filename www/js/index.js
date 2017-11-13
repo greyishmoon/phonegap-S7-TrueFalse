@@ -32,8 +32,12 @@ function getAnswer() {
 
     if (result) {
         $("#responseText").text("Result is TRUE");
+        // Beep once!
+        navigator.notification.beep(1);
     } else {
         $("#responseText").text("Result is FALSE");
+        // Beep twice!
+        navigator.notification.beep(2);
     }
 
 	
