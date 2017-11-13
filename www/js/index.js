@@ -2,11 +2,11 @@
 //----------- CORDOVA ONLOAD ---------------- //
 
 // Cordova device event listener - will not work in browser
-//document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 
 // TEMP HTML ONLOAD
-$( document ).ready( onDeviceReady );
-//		alert("JS");
+//$( document ).ready( onDeviceReady );
+
 // Cordova device event triggered function
 function onDeviceReady() {
 	
