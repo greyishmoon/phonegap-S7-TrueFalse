@@ -20,7 +20,7 @@ function onDeviceReady() {
 
 function getAnswer() {
 	
-	$("#responseText").text(random());
+	$("#responseText").text("WORKS");
 	
 }
 
